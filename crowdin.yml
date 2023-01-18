@@ -1,0 +1,10 @@
+files:
+  - source: /model/**/*.yml
+    translation: '%original_path%/%original_file_name%'
+    excluded_target_languages:
+      - tt
+      - nl
+      - de
+      - pt-BR
+      - es-ES
+      - zh-TW
