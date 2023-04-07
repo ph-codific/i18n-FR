@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - translations
+      - trans_2.0
 
 jobs:
   trigger-workflow:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run workflow
-        uses: ph-codific/pdf-generator@translations
+      - name: Run pdf workflow
+        uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@translations
         with:
           keep_alive: 1
           url: https://github.com/owaspsamm/i18n-FR.git
