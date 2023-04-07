@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run pdf workflow
-        uses: docker://phcodific/pdf-generator:latest
+        uses: ph-codific/pdf-generator@main
         with:
           keep_alive: 1
           url: https://github.com/owaspsamm/i18n-FR.git
