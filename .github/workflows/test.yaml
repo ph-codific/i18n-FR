@@ -21,8 +21,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
       - name: Run pdf workflow
-        uses: ph-codific/pdf-generator@translations
+        uses: docker://phcodific/pdf-generator:latest
         with:
           keep_alive: 1
           url: https://github.com/owaspsamm/i18n-FR.git
