@@ -1,6 +1,5 @@
 name: Listen for pushes in original repository
 
-
 on:
   push:
     branches:
@@ -13,17 +12,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Run my repo workflow
         run: echo 'this repo workflows'
 
   pdf-generate-workflow:
     runs-on: ubuntu-latest
     needs: trigger-workflow
-    uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@translations
-    with:
-      keep_alive: 1
-      url: https://github.com/owaspsamm/i18n-FR.git
-      branch: trans_2.0
-      model: model
-      language: fr
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run pdf workflow
+        uses: ph-codific/pdf-generator@translations
+        with:
+          keep_alive: 1
+          url: https://github.com/owaspsamm/i18n-FR.git
+          branch: trans_2.0
+          model: model
+          language: fr
