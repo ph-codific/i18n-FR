@@ -30,4 +30,4 @@ jobs:
           branch: trans_2.0
           model: model
           language: fr
-          docker-image: php:8.1
+          dockerfile-path: Dockerfile
