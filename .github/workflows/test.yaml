@@ -30,3 +30,4 @@ jobs:
           branch: trans_2.0
           model: model
           language: fr
+          php-version: '8.1'
