@@ -30,4 +30,3 @@ jobs:
           branch: trans_2.0
           model: model
           language: fr
-          dockerfile-path: Dockerfile
