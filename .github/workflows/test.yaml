@@ -1,0 +1,22 @@
+name: Listen for pushes in original repository
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run workflow
+      - uses: ph-codific/pdf-generator
+        with:
+          keep_alive: 1
+          url: https://github.com/owaspsamm/i18n-FR.git
+          branch: trans_2.0
+          model: model
+          language: fr
