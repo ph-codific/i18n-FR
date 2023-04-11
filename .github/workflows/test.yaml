@@ -24,9 +24,11 @@ jobs:
 
       - name: Run pdf workflow
         uses: ph-codific/pdf-generator@main
-        with:
-          keep_alive: 1
-          url: https://github.com/owaspsamm/i18n-FR.git
-          branch: trans_2.0
-          model: model
-          language: fr
+#      - name: Run pdf workflow
+#        uses: ph-codific/pdf-generator@main
+#        with:
+#          keep_alive: 1
+#          url: https://github.com/owaspsamm/i18n-FR.git
+#          branch: trans_2.0
+#          model: model
+#          language: fr
