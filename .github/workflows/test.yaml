@@ -42,7 +42,7 @@ jobs:
     needs: trigger-workflow-own
     steps:
       - name: Run remote workflow
-        uses: https://github.com/ph-codific/pdf-generator/blob/main/.github/workflows/symfony.yml@main
+        uses: ph-codific/pdf-generator/blob/main/.github/workflows/symfony.yml@main
         with:
           keep_alive: 1
           url: https://github.com/owaspsamm/i18n-FR.git
