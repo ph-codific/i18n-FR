@@ -1,4 +1,4 @@
-name: Listen for pushes in original repository
+name: random-persons-workflow
 
 on:
   push:
@@ -7,6 +7,26 @@ on:
     branches: none #main
 
   workflow_dispatch:
+    inputs:
+      keep_alive:
+        description: 'docker keep alive'
+        required: true
+        default: 1
+      url:
+        description: 'The url of the repo'
+        required: true
+        default: https://github.com/owaspsamm/core
+      branch:
+        description: 'branch of the repo'
+        required: true
+        default: main
+      model:
+        description: 'the model'
+        required: true
+        default: model
+      language:
+        description: 'the language'
+        default: en
 
 jobs:
   trigger-workflow-own:
