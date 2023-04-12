@@ -41,8 +41,8 @@ jobs:
   trigger-workflow-remote:
     uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@main
     with:
-      keep_alive: "1"
-      url: "https://github.com/owaspsamm/i18n-FR.git"
-      branch: "trans_2.0"
-      model: "model"
-      language: "fr"
+      keep_alive: ${{ inputs.keepalive }}
+      url: ${{ inputs.url }}
+      branch: ${{ inputs.branch }}
+      model: ${{ inputs.model }}
+      language: ${{ inputs.language }}
