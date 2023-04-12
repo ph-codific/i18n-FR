@@ -18,6 +18,9 @@ jobs:
         run: echo 'this repo workflows'
 
   trigger-workflow-remote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
     uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@main
     with:
       keep_alive: 1
