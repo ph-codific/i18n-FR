@@ -3,7 +3,7 @@ name: Listen for pushes in original repository
 on:
   push:
     branches: none #main
-  pull_requests:
+  pull_request:
     branches: none #main
 
   workflow_dispatch:
