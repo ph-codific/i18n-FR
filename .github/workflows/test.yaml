@@ -38,14 +38,10 @@ jobs:
         run: echo 'this repo workflows'
 
   trigger-workflow-remote:
-    runs-on: ubuntu-latest
-    needs: trigger-workflow-own
-    steps:
-      - name: Run remote workflow
-        uses: ph-codific/pdf-generator/blob/main/.github/workflows/symfony.yml@main
-        with:
-          keep_alive: 1
-          url: https://github.com/owaspsamm/i18n-FR.git
-          branch: trans_2.0
-          model: model
-          language: fr
+    uses: ph-codific/pdf-generator/blob/main/.github/workflows/symfony.yml@main
+    with:
+      keep_alive: 1
+      url: https://github.com/owaspsamm/i18n-FR.git
+      branch: trans_2.0
+      model: model
+      language: fr
