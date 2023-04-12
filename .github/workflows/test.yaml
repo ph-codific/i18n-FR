@@ -1,10 +1,10 @@
 name: random-persons-workflow
 
 on:
-  push:
-    branches: none #main
-  pull_request:
-    branches: none #main
+#  push:
+#    branches: none #main
+#  pull_request:
+#    branches: none #main
 
   workflow_dispatch: # temporary for testing
     inputs:
