@@ -7,27 +7,6 @@ on:
     branches: none #main
 
   workflow_dispatch: # temporary for testing
-    inputs:
-      keep_alive:
-        description: 'docker keep alive'
-        required: true
-        default: 1
-      url:
-        description: 'The url of the repo'
-        required: true
-        default: https://github.com/owaspsamm/i18n-FR.git
-      branch:
-        description: 'branch of the repo'
-        required: true
-        default: trans_2.0
-      model:
-        description: 'the model'
-        required: true
-        default: model
-      language:
-        required: true
-        description: 'the language'
-        default: fr
 
 jobs:
   trigger-workflow-own:
@@ -41,8 +20,8 @@ jobs:
   trigger-workflow-remote:
     uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@main
     with:
-      keep_alive: ${{ inputs.keepalive }}
-      url: ${{ inputs.url }}
-      branch: ${{ inputs.branch }}
-      model: ${{ inputs.model }}
-      language: ${{ inputs.language }}
+      keep_alive: 1
+      url: https://github.com/owaspsamm/i18n-FR.git
+      branch: trans_2.0
+      model: model
+      language: fr
