@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: none #main
 
-  workflow_dispatch:
+  workflow_dispatch: # temporary for testing
     inputs:
       keep_alive:
         description: 'docker keep alive'
@@ -15,18 +15,18 @@ on:
       url:
         description: 'The url of the repo'
         required: true
-        default: https://github.com/owaspsamm/core
+        default: https://github.com/owaspsamm/i18n-FR.git
       branch:
         description: 'branch of the repo'
         required: true
-        default: main
+        default: trans_2.0
       model:
         description: 'the model'
         required: true
         default: model
       language:
         description: 'the language'
-        default: en
+        default: fr
 
 jobs:
   trigger-workflow-own:
