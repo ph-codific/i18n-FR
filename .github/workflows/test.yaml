@@ -25,6 +25,7 @@ on:
         required: true
         default: model
       language:
+        required: true
         description: 'the language'
         default: fr
 
