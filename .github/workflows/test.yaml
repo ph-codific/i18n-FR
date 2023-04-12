@@ -18,10 +18,10 @@ jobs:
         run: echo 'this repo workflows'
 
   trigger-workflow-remote:
-    uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@main
-    with:
-      keep_alive: 1
-      url: https://github.com/owaspsamm/i18n-FR.git
-      branch: trans_2.0
-      model: model
-      language: fr
+    uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@branchg/aSHA/REALKSE
+#    with:
+#      keep_alive: 1
+#      url: https://github.com/owaspsamm/i18n-FR.git
+#      branch: trans_2.0
+#      model: model
+#      language: fr
