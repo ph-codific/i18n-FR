@@ -10,17 +10,14 @@ on:
 
 jobs:
   trigger-workflow-own:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Run my repo workflow
-        run: echo 'this repo workflows'
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#    - name: Run my repo workflow
+    run: echo 'this repo workflows'
 
   trigger-workflow-remote:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
     uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@main
     with:
       keep_alive: 1
