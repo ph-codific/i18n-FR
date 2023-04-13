@@ -23,5 +23,4 @@ jobs:
       keep_alive: 1
       url: https://github.com/owaspsamm/i18n-FR.git
       branch: trans_2.0
-      model: model
       language: fr
