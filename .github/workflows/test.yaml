@@ -18,7 +18,7 @@ jobs:
         run: echo 'this repo workflows'
 
   trigger-workflow-remote:
-    uses: ph-codific/pdf-generator/.github/workflows/symfony.yml@main
+    uses: owaspsamm/pdf-generator/.github/workflows/translated.yml@main
     with:
       keep_alive: 1
       url: https://github.com/owaspsamm/i18n-FR.git
