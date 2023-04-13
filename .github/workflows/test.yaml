@@ -18,7 +18,7 @@ jobs:
         run: echo 'this repo workflows'
 
   trigger-workflow-remote:
-    uses: https://github.com/owaspsamm/pdf-generator/blob/main/.github/workflows/translated.yml #owaspsamm/pdf-generator/.github/workflows/translated.yml@main
+    uses: owaspsamm/pdf-generator/.github/workflows/translated.yml@main
     with:
       keep_alive: 1
       url: https://github.com/owaspsamm/i18n-FR.git
